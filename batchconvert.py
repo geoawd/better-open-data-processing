@@ -1,3 +1,6 @@
+'''
+simple scriot to convert files with deflate compression and statistics
+'''
 import os
 from osgeo import gdal
 
