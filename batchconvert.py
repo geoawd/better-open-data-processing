@@ -14,7 +14,7 @@ for f in os.listdir(input_dir):
         
         translate_options = gdal.TranslateOptions(
             format='COG',
-            creationOptions=["COMPRESS=DEFLATE", "NUM_THREADS=ALL_CPUS", "STATISTICS=Yes"],
+            creationOptions=["COMPRESS=ZSTD", "PREDICTOR=2", "NUM_THREADS=ALL_CPUS", "STATISTICS=Yes"],
             outputSRS='EPSG:29902'
         )
         
