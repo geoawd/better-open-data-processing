@@ -1,3 +1,7 @@
+'''
+This script can be used to recalculate raster values.
+
+'''
 import os
 import subprocess
 from osgeo import gdal
@@ -99,4 +103,4 @@ r'/var/www/html2/lidar/Sion Mills_02_02_2012_DTM.tif',
 output_folder = "~/processed_cogs"
 
 # Process the files
-process_cog_files(files, output_folder, divisor=1000, nodata=-99)
+process_cog_files(files, output_folder, divisor=1000, nodata=-9999)
